@@ -16,7 +16,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 10vw;
   margin: 0;
 }
 
@@ -37,13 +37,16 @@ footer {
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: 48px;
+  padding: 92px 10vw;
+  gap: 32px;
 }
 
 .banner img {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 300px;
   flex: 1;
+  object-fit: cover;
+  box-shadow: 4px 4px 8px 4px rgba(255, 255, 255, 0.2);
 }
 
 .banner-info {
@@ -64,7 +67,7 @@ ul {
   list-style: none;
   margin: 0;
   display: flex;
-  gap: 16px;
+  gap: 24px;
 }
 
 a {
@@ -76,13 +79,13 @@ a {
 .content {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .information {
   justify-content: center;
   flex: 1;
   text-align: center;
+  margin-bottom: 92px;
 }
 
 .information h4 {
@@ -98,14 +101,21 @@ a {
 }
 
 .card {
-  margin: 0 32px;
+  margin: 0 24px;
   text-align: center;
-  width: 200px;
+  width: 13vw;
+  border-radius: 12px;
+  padding: 1vw;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition-duration: 0.2s;
 }
 
 .card img {
-  width: 200px;
-  height: 200px;
+  width: 12vw;
+  height: 12vw;
   border: 5px solid #3882f6;
   border-radius: 16px;
   object-fit: cover;
@@ -121,30 +131,93 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #e5e7eb;
+  padding: 92px;
+}
+
+.quote-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60vw;
 }
 
 .quote q {
   color: #1f2937;
   font-size: 36px;
+  font-style: italic;
 }
 
+.quote p {
+  align-self: flex-end;
+  font-weight: 700;
+  margin: 0;
+  font-size: 20px;
+}
+
+.action-section {
+  padding: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-to-action {
+  background-color: #3882f6;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  padding: 36px 0;
+}
+
+.call-to-action-text {
+  color: #f9faf8;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.call-to-action-text h5 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.call-to-action-text p {
+  text-wrap: wrap;
+  margin: 0;
+}
+
+.call-to-action-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .btn,
 .btn-inverse {
   padding: 8px 32px;
   border-radius: 12px;
-  border: 3px solid #3882f6;
   font-size: 18px;
+}
+
+.btn:hover,
+.btn-inverse:hover {
+  transition: 0.2s;
+  background-color: #6499ee;
 }
 
 .btn {
   background-color: #3882f6;
   color: #f9faf8;
+  border: 3px solid #3882f6;
 }
 
 .btn-inverse {
-  background-color: #f9faf8;
-  color: #3882f6;
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: 3px solid #f9faf8;
 }
 
 footer {
